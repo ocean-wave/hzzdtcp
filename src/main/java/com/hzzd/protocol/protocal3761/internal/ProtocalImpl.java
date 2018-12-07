@@ -23,9 +23,9 @@ public class ProtocalImpl implements IProtocal {
     private Inquire inquire;
     private CodecConfig codecConfig;
 
-    private static final int SEQ_NOT_MATCH=2;
-    private static final int TIMEOUT_REACH=4;
-    private static final int HAVE_NEXT_FRAME=8;
+    private static final int SEQ_NOT_MATCH = 2;
+    private static final int TIMEOUT_REACH = 4;
+    private static final int HAVE_NEXT_FRAME = 8;
 
     //0-idle,1-waitResponse
     private int protocalStatus=0;

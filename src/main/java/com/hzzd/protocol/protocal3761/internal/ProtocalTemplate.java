@@ -22,6 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ProtocalTemplate implements Constants {
     private SAXBuilder saxBuilder = new SAXBuilder();
     private final String CONFIG_FILE="protocal.xml";
+    
     /**
      * 附件区中的字段组
      */
@@ -95,6 +96,17 @@ public class ProtocalTemplate implements Constants {
         }
         Element params=element.getChild("params");
         loadCodecConfig(params);
+        
+        /*System.out.println("codecConfig");
+        System.out.println(codecConfig);
+        System.out.println("fieldGroupMap");
+        System.out.println(fieldGroupMap);
+        System.out.println("dataMap");
+        System.out.println(dataMap);
+        System.out.println("eventMap");
+        System.out.println(eventMap);
+        System.out.println("dataMapByName");
+        System.out.println(dataMapByName);*/
     }
 
     /**

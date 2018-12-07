@@ -28,6 +28,7 @@ public class HeadTailUnwrapper extends Unwrapper{
         in.get(headArray);
         Head head=(Head)packetSegmentContext.getSegment(SegmentEnum.head);
         Tail tail=(Tail)packetSegmentContext.getSegment(SegmentEnum.tail);
+        
         if(headArray[0]!=headArray[5] || !(headArray[0]==0x68 || headArray[0]==0x69)
                 || headArray[1]!=headArray[3] || headArray[2]!=headArray[4]){
             throw new VerifyException(1111,"报文头校验错误");

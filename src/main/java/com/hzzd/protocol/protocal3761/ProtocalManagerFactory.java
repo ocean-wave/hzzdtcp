@@ -10,7 +10,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by peter on 2015-1-13.
  */
 public class ProtocalManagerFactory {
-    //private static final Map<String,ProtocalTemplate> templateCache=new ConcurrentHashMap<>();
     private static final Map<String,ProtocalTemplate> templateCache=new ConcurrentHashMap<String, ProtocalTemplate>();
 
     public static IProtocal getProtocalManager(String protocalName,CodecConfig codecConfig) throws Exception{
@@ -29,7 +28,4 @@ public class ProtocalManagerFactory {
         }
         return protocalTemplate;
     }
-
-
-
 }

@@ -1,7 +1,8 @@
 package com.hzzd.hzzdtcp;
 
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +22,6 @@ public class TestProtocal {
 		Packet packet = new Packet();
 		packet.setTerminalAddress("91910004");
 		Map<String, Object> data = new HashMap<String, Object>();
-		Date date = new Date();
 		Calendar calendar = Calendar.getInstance();
 		Map<String, Object> timeData = new HashMap<String, Object>();
 		timeData.put("second", calendar.get(Calendar.SECOND));
@@ -35,7 +35,7 @@ public class TestProtocal {
 		System.out.println(new Gson().toJson(timeData));
 		data.put("time", timeData);
 		packet.setData(data);
-		packet.setCommand("setControlParam3");
+		packet.setCommand("setControlParam5"); // setControlParam1 ~ setControlParam5
 		// packet.setCommand("synchronizeTime");
 		packet.setLine(1);
 
@@ -44,5 +44,15 @@ public class TestProtocal {
 			System.out.print(Hex.encodeHex(outPacket.getByteBuffer().array()));
 		else
 			System.out.println("Error");
+		
+		/*String bStr = "687b007b00684a919104002c04f1000000000000000000000000000000000151421707054816";
+		ByteBuffer in = str_to_bb(bStr, Charset.forName("UTF8"));
+		Packet out = new Packet();
+		protocalManagerRgm.decode(in, out);
+		System.out.println(out.toString());*/
+	}
+	
+	public static ByteBuffer str_to_bb(String msg, Charset charset){
+	    return ByteBuffer.wrap(msg.getBytes(charset));
 	}
 }

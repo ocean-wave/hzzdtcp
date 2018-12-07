@@ -226,6 +226,7 @@
         </field>
         <field name="reSwitchOn">
             <remark>重合闸</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -236,6 +237,7 @@
         </field>
         <field name="gearReturn">
             <remark>档位返回</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -246,6 +248,7 @@
         </field>
         <field name="timingSwitch">
             <remark>定时试跳</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -256,6 +259,7 @@
         </field>
         <field name="alertSound">
             <remark>报警声音</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -266,6 +270,7 @@
         </field>
         <field name="alertLight">
             <remark>报警灯光</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -276,6 +281,7 @@
         </field>
         <field name="dataAlert">
             <remark>数据告警</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -298,6 +304,7 @@
         <remark>漏保整定参数之设备控制字2</remark>
         <field name="overCurrentSwitchControl">
             <remark>过流保护跳闸控制</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -308,6 +315,7 @@
         </field>
         <field name="overCurrentDataAlert">
             <remark>过流保护数据告警</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -318,6 +326,7 @@
         </field>
         <field name="phaseLossSwitchControl">
             <remark>缺相保护跳闸控制</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -328,6 +337,7 @@
         </field>
         <field name="phaseLossDataAlert">
             <remark>缺相保护数据告警</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -338,6 +348,7 @@
         </field>
         <field name="overVoltageSwitchControl">
             <remark>过压保护跳闸控制</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -348,6 +359,7 @@
         </field>
         <field name="overVoltageDataAlert">
             <remark>过压保护数据告警</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -358,6 +370,7 @@
         </field>
         <field name="underVoltageSwitchControl">
             <remark>欠压保护跳闸控制</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -368,6 +381,7 @@
         </field>
         <field name="underVoltageDataAlert">
             <remark>欠压保护数据告警</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>1</length>
             </fieldType>
@@ -427,6 +441,7 @@
         <remark>漏保整定参数之设备控制字4</remark>
         <field name="residualCurrentAlertTime">
             <remark>剩余电流报警时间</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>2</length>
             </fieldType>
@@ -439,6 +454,7 @@
         </field>
         <field name="utmostNoDriveTime">
             <remark>极限不驱动时间</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>2</length>
             </fieldType>
@@ -451,6 +467,7 @@
         </field>
         <field name="residualCurrentAction1">
             <remark>剩余电流动作值I</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>2</length>
             </fieldType>
@@ -463,6 +480,7 @@
         </field>
         <field name="residualCurrentAction2">
             <remark>剩余电流动作值II</remark>
+            <defaultValue>0</defaultValue>
             <fieldType name="unsigned8">
                 <length>2</length>
             </fieldType>
@@ -477,6 +495,7 @@
 
     <fieldGroup name="controlParam5">
         <remark>漏保整定参数之设备控制字5</remark>
+        <defaultValue>0</defaultValue>
         <field name="dummy">
             <remark>保留</remark>
             <defaultValue>0</defaultValue>
@@ -487,6 +506,7 @@
 
     <fieldGroup name="statusParam1">
         <remark>漏保运行状态字1</remark>
+        <defaultValue>0</defaultValue>
         <field name="frozenDensity">
             <remark>数据冻结密度m</remark>
             <fieldType name="unsigned8"/>
@@ -498,6 +518,7 @@
     </fieldGroup>
     <fieldGroup name="statusParam2">
         <remark>漏保运行状态字2</remark>
+        <defaultValue>0</defaultValue>
         <field name="frozenDensity">
             <remark>数据冻结密度m</remark>
             <fieldType name="unsigned8"/>
